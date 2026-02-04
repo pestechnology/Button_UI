@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Button UI Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧪 Button UI Lab</h1>
+    <p>Test 3 different UI buttons with functionality + states.</p>
+
+    <!-- Button 1 -->
+    <div class="card">
+      <h2>1) Primary Button</h2>
+      <p><b>Features:</b> Click action + counter + hover/active UI</p>
+      <button id="primaryBtn" class="btn btn-primary">Primary Button</button>
+      <p>Clicks: <span id="primaryCount">0</span></p>
+      <p id="primaryMsg" class="msg"></p>
+    </div>
+
+    <!-- Button 2 -->
+    <div class="card">
+      <h2>2) Secondary Button</h2>
+      <p><b>Features:</b> Enable/Disable state testing</p>
+      <button id="secondaryBtn" class="btn btn-secondary">Secondary Button</button>
+      <button id="toggleBtn" class="btn btn-outline">Disable Secondary</button>
+      <p id="secondaryMsg" class="msg"></p>
+    </div>
+
+    <!-- Button 3 -->
+    <div class="card">
+      <h2>3) Danger Button</h2>
+      <p><b>Features:</b> Loading state + confirm + API simulation</p>
+      <button id="dangerBtn" class="btn btn-danger">
+        Danger Button
+      </button>
+      <p id="dangerMsg" class="msg"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
