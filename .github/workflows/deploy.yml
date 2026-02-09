@@ -33,6 +33,9 @@ jobs:
           host: ${{ secrets.AZURE_VM_IP }}
           username: ${{ secrets.AZURE_VM_USER }}
           key: ${{ secrets.AZURE_SSH_KEY }}
+          port: 22
+          timeout: 30s
+          command_timeout: 10m
           script: |
             docker stop button-ui || true
             docker rm button-ui || true
